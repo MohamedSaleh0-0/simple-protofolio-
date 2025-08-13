@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mohamed Saleh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #121212; /* Dark background for the page */
+            color: #e0e0e0; /* Light text color */
+            line-height: 1.6;
+            /* Flexbox for centering */
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+
+        /* Container for centering content */
+        .container {
+            width: 80%;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* Header and Navigation */
+        header {
+            width: 100%; 
+            background: #1e1e1e; /* Slightly lighter dark for header */
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: #2dd4bf 3px solid; 
+        }
+
+        header h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        section {
+            background: #1e1e1e; 
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+
+        h2 {
+            color: #2dd4bf; 
+            margin-bottom: 10px;
+        }
+        /* Skills and Knowledge Checklists */
+        .checklist-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .checklist {
+            width: 45%;
+        }
+
+        .checklist ul {
+            list-style: none; // remove default bullet
+        }
+
+        .checklist li {
+            margin-bottom: 10px;
+        }
+
+        .checklist label {
+            margin-left: 8px; // better readability 
+        }
+
+        .projects-table {
+            width: 100%;
+            border-collapse: collapse; /* Merges cell borders */
+            margin-top: 15px;
+        }
+
+        .projects-table th, .projects-table td {
+            border: 1px solid #444; /* Darker border */
+            padding: 12px;
+            text-align: left;
+        }
+
+        .projects-table th {
+            background-color: #2dd4bf; 
+            color: #121212; 
+        }
+
+        .projects-table tr:nth-child(even) {
+            background-color: #2a2a2a; 
+        }
+        footer {
+            width: 100%; 
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+
+        footer a {
+            color: #2dd4bf; /* Teal accent color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mohamed Saleh</h1>
+        <p style="text-align: center;">Software Developer | Backend Specialist</p>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                <strong>Hello!</strong> I am a software developer passionate about building efficient and innovative technical solutions. I enjoy turning complex ideas into practical and user-friendly applications.
+            </p>
+        </section>
+
+        <!-- Knowledge and Skills Section -->
+        <section id="skills">
+            <h2>Knowledge Base & Technical Skills</h2>
+            <div class="checklist-container">
+                
+                <!-- Knowledge Checklist -->
+                <div class="checklist">
+                    <h3>Knowledge Base</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="dsa" checked disabled>
+                            <label for="dsa">Data Structures & Algorithms (DSA)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="os" checked disabled>
+                            <label for="os">Operating Systems (OS)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="coa" checked disabled>
+                            <label for="coa">Computer Organization & Architecture (COA)</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skills Checklist -->
+                <div class="checklist">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li><input type="checkbox" id="html" checked disabled><label for="html">HTML</label></li>
+                        <li><input type="checkbox" id="css" checked disabled><label for="css">CSS</label></li>
+                        <li><input type="checkbox" id="bootstrap" checked disabled><label for="bootstrap">Bootstrap</label></li>
+                        <li><input type="checkbox" id="js" checked disabled><label for="js">JavaScript</label></li>
+                        <li><input type="checkbox" id="csharp" checked disabled><label for="csharp">C#</label></li>
+                        <li><input type="checkbox" id="sql" checked disabled><label for="sql">SQL Server</label></li>
+                        <li><input type="checkbox" id="oop" checked disabled><label for="oop">OOP</label></li>
+                        <li><input type="checkbox" id="dotnet" disabled><label for="dotnet">.NET</label></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <table class="projects-table">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Technologies Used</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Task Management System</td>
+                        <td>A web application to organize and track daily tasks for teams.</td>
+                        <td>C#, .NET, SQL Server</td>
+                    </tr>
+                    <tr>
+                        <td>Simple E-commerce Frontend</td>
+                        <td>A frontend for an e-commerce store to display products.</td>
+                        <td>HTML, CSS, JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: center;">More projects coming soon...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="https://github.com/MohamedSaleh0-0" target="_blank">GitHub</a>
+        </p>
+        <p>&copy; 2025 Mohamed Saleh. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
